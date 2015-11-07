@@ -10,40 +10,44 @@
     <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 
- <script type ="text/javascript" >
-     function vidEvent() {
-         var videos = document.getElementsByTagName('video');
-         var vidCount = videos.length;
-         for (i = 0; i < vidCount; i++) {
-             videos[i].addEventListener('click', bang, false);
-         }
-     }
-     function bang() { this.play(); }
-     window.onload = vidEvent;
-     //debugger;
-     //var video1 = document.getElementById('v1');
-     //var video2 = document.getElementById('v2');
-     //var video3 = document.getElementById('video1');
-     //video1.addEventListener('click', function () {
-     //    video1.play();
-     //}, false);
+    <script type="text/javascript">
+        function vidEvent() {
+            var videos = document.getElementsByTagName('video');
+            var vidCount = videos.length;
+            for (i = 0; i < vidCount; i++) {
+                videos[i].addEventListener('click', PlayMe, false);
+            }
+        }
 
-     //function videonefuntion() {
-     //     debugger;
-     //     var video1 = document.getElementById('video1');
+        function PlayMe() {
+            this.play();
+        }
 
-     //}
-     //var video2 = document.getElementById('video2');
-     //video2.addEventListener('click', function () {
-     //    video2.play();
-     //}, false);
+        window.onload = vidEvent;
+        //debugger;
+        //var video1 = document.getElementById('v1');
+        //var video2 = document.getElementById('v2');
+        //var video3 = document.getElementById('video1');
+        //video1.addEventListener('click', function () {
+        //    video1.play();
+        //}, false);
+
+        //function videonefuntion() {
+        //     debugger;
+        //     var video1 = document.getElementById('video1');
+
+        //}
+        //var video2 = document.getElementById('video2');
+        //video2.addEventListener('click', function () {
+        //    video2.play();
+        //}, false);
 
     </script>
 
 </head>
 <body>
 
-   
+
     <div id="page-wrapper">
 
         <!-- Header -->
@@ -51,7 +55,7 @@
             <h1 id="logo"><a href="index.html">Landed</a></h1>
             <nav id="nav">
                 <ul>
-                    <li><a href="index.html">Home</a></li>               
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="lessons.html">Lessons</a></li>
                     <li><a href="#" class="button special">Sign Up</a></li>
                 </ul>
@@ -66,24 +70,34 @@
                 </header>
 
                 <section>
-                      <video id ="v3" controls="controls"  height="240"  width="360" >
+
+
+                    <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="360" height="240" poster="http://video-js.zencoder.com/oceans-clip.png" data-setup="{}">
+                        <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+                        <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+                        <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+                    </video>
+
+                    <hr />
+
+                    <video id="v3" controls="controls" height="240" width="360">
                         <source src="https://drive.google.com/uc?export=download&id=0Bwo02je2KGQxNjZSR3dDSmdwLTA" />
                     </video>
 
                     <hr />
 
-                    <video id="v1"  controls="controls"">
-                    <source src="https://drive.google.com/uc?export=download&id=0B0JMGMGgxp9WMEdWb1hyQUhlOWs"  type='video/mp4'/>
+                    <video id="v1" controls="controls" height="240" width="360">
+                        <source src="https://drive.google.com/uc?export=download&id=0B0JMGMGgxp9WMEdWb1hyQUhlOWs" type='video/mp4' />
                     </video>
                     <hr />
 
-                    <video id ="v2" controls="controls">
+                    <video id="v2" controls="controls">
                         <source src="https://drive.google.com/uc?export=download&id=0Bwo02je2KGQxNjZSR3dDSmdwLTA" type='video/mp4' />
                     </video>
 
                     <hr />
 
-                   
+
                     <!--<hr />
                     <h4>
                         <iframe src="https://drive.google.com/file/d/0Bwo02je2KGQxNnJ4MGZOVnlwcXM/preview" width="640" height="480"></iframe>
@@ -134,6 +148,9 @@
     <script src="assets/js/util.js"></script>
     <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
     <script src="assets/js/main.js"></script>
+
+    <link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet" type="text/css">
+    <script src="http://vjs.zencdn.net/c/video.js"></script>
 
 </body>
 </html>
