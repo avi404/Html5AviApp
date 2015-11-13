@@ -67,12 +67,38 @@ $(function () {
             else
                 PlayerSkin = ' ';
 
+            //https://drive.google.com/file/d/0Bwo02je2KGQxeFF4NUZfZzc5R2M/view?usp=sharing  mp4 
+            // https://drive.google.com/file/d/0Bwo02je2KGQxM2paUEtzUTdjNGs/view?usp=sharing ogv
+           // https://drive.google.com/file/d/0Bwo02je2KGQxS21ZNXhpRTY1cGs/view?usp=sharing  webm
+
             var videoStr = '<div class="videoNode" id="VideoBox_' + videoID + '">\n<video ' + PlayerSkin + strAutoPlay + strLoop + ' id="' + videoID + '" controls preload="none" width="' + widthHeight[0] + '" height="' + widthHeight[1] + '"\n' +
                 '\tposter="poster/' + videoID + '.jpg"">\n' +
-                '\t<source src="./videos/' + videoID + '.mp4" type="video/mp4" />\n' +
-                '\t<source src="./videos/' + videoID + '.webm" type="video/webm" />\n' +
-                '\t<source src="./videos/' + videoID + '.ogv" type="video/ogg" />\n' +
+                '\t<source src="https://www.dropbox.com/s/8a789e89o7o79t4/video3.mp4" type="video/mp4" />\n' +
+                '\t<source src="https://www.dropbox.com/s/bgs0r6e0l8md1ta/video3.webm" type="video/webm" />\n' +
+                '\t<source src="https://www.dropbox.com/s/1utzmzypzt0v87s/video3.ogv" type="video/ogg" />\n' +
                 '</video>\n</div>';
+
+            //https://drive.google.com/open?id=0Bwo02je2KGQxOHZ2UnczWEdiNjg
+
+
+
+
+            //var videoStr = '<div class="videoNode" id="VideoBox_' + videoID + '">\n<video ' + PlayerSkin + strAutoPlay + strLoop + ' id="' + videoID + '" controls preload="none" width="' + widthHeight[0] + '" height="' + widthHeight[1] + '"\n' +
+            //   '\tposter="poster/' + videoID + '.jpg"">\n' +
+            //   '\t<source src="https://drive.google.com/file/d/0Bwo02je2KGQxeFF4NUZfZzc5R2M/view?usp=sharing" type="video/mp4" />\n' +
+            //   '\t<source src="https://drive.google.com/file/d/0Bwo02je2KGQxS21ZNXhpRTY1cGs/view?usp=sharing" type="video/webm" />\n' +
+            //   '\t<source src="https://drive.google.com/file/d/0Bwo02je2KGQxM2paUEtzUTdjNGs/view?usp=sharing" type="video/ogg" />\n' +
+            //   '</video>\n</div>';
+
+
+            //var videoStr = '<div class="videoNode" id="VideoBox_' + videoID + '">\n<video ' + PlayerSkin + strAutoPlay + strLoop + ' id="' + videoID + '" controls preload="none" width="' + widthHeight[0] + '" height="' + widthHeight[1] + '"\n' +
+            //   '\tposter="poster/' + videoID + '.jpg"">\n' +
+            //   '\t<source src="./videos/' + videoID + '.mp4" type="video/mp4" />\n' +
+            //   '\t<source src="./videos/' + videoID + '.webm" type="video/webm" />\n' +
+            //   '\t<source src="./videos/' + videoID + '.ogv" type="video/ogv" />\n' +
+            //   '</video>\n</div>';
+
+
 
             var vbox = $("#VideoWrapper").append(videoStr);
 
